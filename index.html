@@ -11,7 +11,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -19,18 +23,20 @@
 				<header>
 					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Benjamin Matthias Ruppik (he/him)</a></h1>
-					<p>
-					3rd year PhD student @
-                    <a href="https://www.mpim-bonn.mpg.de">Max Planck Institute for Mathematics</a>
-                    in Bonn,
-                    my advisors are
-                    <a href="http://people.mpim-bonn.mpg.de/aruray/">Arunima Ray</a>
-                    and 
-                    <a href="https://people.mpim-bonn.mpg.de/teichner/Math/">Peter Teichner</a>.
-                    <br>
-                    <a href="https://ben300694.github.io/pdfs/interests/2021-05_CV_tabular_Benjamin_Matthias_Ruppik_public.pdf">CV</a>,
-                    <a href="https://ben300694.github.io/pdfs/interests/2020-05_Interests_MPIM.pdf">Interest text (.pdf, 2020-05)</a>
+					<p style="font-size:100%;">
+						3rd year PhD student @
+						<a href="https://www.mpim-bonn.mpg.de">Max Planck Institute for Mathematics</a>
+						in Bonn
+					</p>
+					<p style="font-size:100%;">
+						<a href="https://ben300694.github.io/pdfs/interests/2021-05_CV_tabular_Benjamin_Matthias_Ruppik_public.pdf">CV (2021-05)</a>
                     </p>
+					<p style="font-size:80%;">
+						Advisors:
+						<a href="http://people.mpim-bonn.mpg.de/aruray/">Arunima Ray</a>
+						and 
+						<a href="https://people.mpim-bonn.mpg.de/teichner/Math/">Peter Teichner</a>.
+					</p>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -74,7 +80,7 @@
                                     <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
                                             style="width:1em;margin-right:0em;" alt="ORCID iD icon">
                                             ORCID</a>;
-                                <a href="https://scholar.google.com/citations?hl=en&user=tBKEM4EAAAAJ">Google Scholar</a>;
+                                <a href="https://scholar.google.com/citations?hl=en&amp;user=tBKEM4EAAAAJ">Google Scholar</a>;
 								<a href="https://www.researchgate.net/profile/Benjamin_Ruppik">ResearchGate</a>.
                                 </p>
                                 
@@ -107,10 +113,11 @@
 												<h4>Deep and Shallow Slice Knots in 4-manifolds</h4>
 												<p>
 											Joint with <a href="https://math.berkeley.edu/~mrklug/">Michael Klug</a>:
-											We study knots in the boundary of a 4-manifold X which bound a properly embedded
-                                            disk in X, but which are not null-concordant in a collar neighborhood
-                                            \partial X x [0,1] of the boundary. <br>
-											To appear: 
+											We study knots in the boundary of a 4-manifold \(X\)
+											which bound a properly embedded disk in \(X\),
+											but which are not null-concordant in a collar neighborhood
+                                            \(\partial X \times [0,1]\) of the boundary. <br>
+											To appear: <br>
 											<a href="https://www.ams.org/publications/journals/journalsframework/bproc" style="color:purple;">
                                                     Proceedings of the AMS, Series B
 											</a>
@@ -145,15 +152,15 @@
 	                                        Gabai's 4-dimensional light bulb theorem</a>
 	                                        we define the
 	                                        Casson-Whitney unknotting number
-	                                        of knotted 2-spheres in S^4:
-	                                        Since every 2-knot K in S^4 can be
+	                                        of knotted 2-spheres in \(S^4\):
+	                                        Since every 2-knot \(K\) in \(S^4\) can be
 	                                        obtained by first performing a number of (trivial) finger moves
 	                                        on the unknot, and in a next step removing
 	                                        the resulting intersection points in pairs
 	                                        via Whitney moves (along possibly complicated discs),
-	                                        we can define u_CW(K)
+	                                        we can define \(u_{\textrm{cw}}(K)\)
 	                                        as the minimal number of finger moves needed in such a process
-	                                        to arrive at K.
+	                                        to arrive at \(K\).
 	                                        We relate this to the 1-handle stabilization
 	                                        number and look specifically at examples of ribbon
 	                                        2-knots and twist-spins of classical knotted arcs. <br>
@@ -161,9 +168,9 @@
                                                     arXiv:2007.13244
 											</a>
 	                                        <br>
-<a href="https://ben300694.github.io/pdfs/2020/2020-04-24_Whitney_Unknotting_Numbers_(Short_Talk).pdf">
+											<a href="https://ben300694.github.io/pdfs/2020/2020-04-24_Whitney_Unknotting_Numbers_(Short_Talk).pdf">
                                             Finger-Whitney Unknotting Numbers - Part 1 (.pdf, handwritten slides)</a>,
-<a href="https://ben300694.github.io/pdfs/2020/2020-04-30_Whitney_Unknotting_Numbers_(Short_Talk_2_Michael).pdf">
+											<a href="https://ben300694.github.io/pdfs/2020/2020-04-30_Whitney_Unknotting_Numbers_(Short_Talk_2_Michael).pdf">
                                             Finger-Whitney Unknotting Numbers - Part 2 [Michael] (.pdf, handwritten slides)</a>
 											    </p>
 										    </div>
@@ -244,7 +251,10 @@
                                         <li>
                                             <a href="https://ben300694.github.io/2-knots">2-Knots page</a>
                                         </li>
-                                    </ul>
+										<li>
+											<a href="https://ben300694.github.io/pdfs/interests/2020-05_Interests_MPIM.pdf">Interest text (2020-05)</a>
+										</li>
+									</ul>
 								</div>
 							</section>
 
@@ -300,8 +310,8 @@
                                             <a href="https://www.ncngt.org/">
                                             NCNGT 2021</a>,
                                             online, June 14 - 25, 2021. <br>
-						<a href="https://ben300694.github.io/pdfs/2021/TODO" style="color:red;">
-                        'Postcard'</a>
+											<a href="https://ben300694.github.io/pdfs/2021/TODO" style="color:red;">
+											'Postcard'</a>
                                         </li>
 										<li>
                                             <a href="https://sites.google.com/view/stw2021/home">
@@ -313,17 +323,17 @@
                                             GTA: Philly 2021 Temple Graduate Student Conference in Algebra, Geometry, and Topology</a>,
                                             online, May 21 - 23, 2021. <br>
                                             Talk:
-                        <a href="https://ben300694.github.io/pdfs/2021/2021-05-21_Slides_Temple_Casson-Whitney_Unknotting_Numbers.pdf">
-                        'Unknotting 2-Knots with Finger- and Whitney Moves' (.pdf, Handwritten Slides)</a>
+											<a href="https://ben300694.github.io/pdfs/2021/2021-05-21_Slides_Temple_Casson-Whitney_Unknotting_Numbers.pdf">
+											'Unknotting 2-Knots with Finger- and Whitney Moves' (.pdf, Handwritten Slides)</a>
                                         </li>
 										<li>
                                             <a href="https://gstgc2021.iu.edu/">
                                             2021 Graduate Student Topology and Geometry Conference (GSTGC)</a>,
                                             online, April 9 - 11, 2021. <br>
                                             Talk:
-                        <a href="https://ben300694.github.io/pdfs/2021/2021-04-11_Slides_GSTGC_Homotopy_Classification_Dihedral_Group.pdf">
-                        'Homotopy classification of 4-manifolds whose
-						fundamental group is dihedral' (.pdf, Handwritten Slides)</a>
+											<a href="https://ben300694.github.io/pdfs/2021/2021-04-11_Slides_GSTGC_Homotopy_Classification_Dihedral_Group.pdf">
+											'Homotopy classification of 4-manifolds whose
+											fundamental group is dihedral' (.pdf, Handwritten Slides)</a>
                                         </li>
 										<li>
 											AIM Online Research Community on
@@ -437,21 +447,21 @@
                                     <ul>
                                         <li>
                                             Geometric Group Theory Study Group at MPIM Bonn: <br>
-            <a href="https://ben300694.github.io/pdfs/2019/2019-10-31_Dehn_Functions_Geometric_Group_Theory_Study_Group_(Bonn).pdf">
-            Dehn Functions (.pdf, handwritten slides)</a>, <br>
-            based on the book 
-            <a href="https://press.princeton.edu/books/paperback/9780691158662/office-hours-with-a-geometric-group-theorist">
-            Office Hours with a Geometric Group Theorist (press.princeton.edu)</a>.
+											<a href="https://ben300694.github.io/pdfs/2019/2019-10-31_Dehn_Functions_Geometric_Group_Theory_Study_Group_(Bonn).pdf">
+											Dehn Functions (.pdf, handwritten slides)</a>, <br>
+											based on the book 
+											<a href="https://press.princeton.edu/books/paperback/9780691158662/office-hours-with-a-geometric-group-theorist">
+											Office Hours with a Geometric Group Theorist (press.princeton.edu)</a>.
                                         </li>
                                         <li>
-            IMPRS seminar at MPIM Bonn: <br>
-            <a href="https://ben300694.github.io/pdfs/2020/2020-01-29_Notes_Some_faces_of_the_Poincare_Homology_Sphere_(Bonn,_IMPRS_Seminar).pdf">
-            'Some faces of the Poincare homology sphere' (.pdf, Handwritten Notes)</a>, <br>
-            <a href="https://ben300694.github.io/pdfs/2020/2020-01-29_Slides_Some_faces_of_the_Poincare_Homology_Sphere_(Bonn,_IMPRS_Seminar).pdf">
-            Pictures and Links (.pdf, Slides)</a>.
-            <div> 
-                <img src="images/personal/2019-01-29_dodekaederturm.jpg" style="max-width:40%;" alt="Dodekaederturm" class="inline"/>
-            </div>
+											IMPRS seminar at MPIM Bonn: <br>
+											<a href="https://ben300694.github.io/pdfs/2020/2020-01-29_Notes_Some_faces_of_the_Poincare_Homology_Sphere_(Bonn,_IMPRS_Seminar).pdf">
+											'Some faces of the Poincare homology sphere' (.pdf, Handwritten Notes)</a>, <br>
+											<a href="https://ben300694.github.io/pdfs/2020/2020-01-29_Slides_Some_faces_of_the_Poincare_Homology_Sphere_(Bonn,_IMPRS_Seminar).pdf">
+											Pictures and Links (.pdf, Slides)</a>.
+											<div> 
+												<img src="images/personal/2019-01-29_dodekaederturm.jpg" style="max-width:40%;" alt="Dodekaederturm" class="inline"/>
+											</div>
                                         </li>
                                     </ul>
 
@@ -490,9 +500,9 @@
                                     <ul>
                                         <li>
                                             IMPRS seminar at MPIM Bonn: <br>
-        <a href="https://ben300694.github.io/pdfs/2019/2019-04-24_The_Homology_of_the_Little_Disks_Operad_(Bonn,_IMPRS_Seminar).pdf">
-        'Homology of the little disks operad' (.pdf, handwritten notes)</a>, <br>
-        based on <a href="https://arxiv.org/abs/math/0610236">[Sinha] The homology of the little disks operad (arXiv:math/0610236)</a>.
+											<a href="https://ben300694.github.io/pdfs/2019/2019-04-24_The_Homology_of_the_Little_Disks_Operad_(Bonn,_IMPRS_Seminar).pdf">
+											'Homology of the little disks operad' (.pdf, handwritten notes)</a>, <br>
+											based on <a href="https://arxiv.org/abs/math/0610236">[Sinha] The homology of the little disks operad (arXiv:math/0610236)</a>.
                                         </li>
                                         <li>
                                             Research talk (on my master thesis) <br>
@@ -1019,19 +1029,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<section id="footer">
+					
 						<div class="container">
+						
 							<ul class="copyright">
 								<li>&copy; All information is released under the
                                 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike license</a>.
                                 </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
-                            <p><small>
+							
+                            <p style="font-size:80%;">
                                 <script language="Javascript">
                                     document.write("Last modified on " + document.lastModified + "");
                                 </script>.<br>
                                 Contact information: bruppik (at) mpim-bonn (dot) mpg (dot) de
-
-                                <p>
+							</p>
+                            
+							<p style="font-size:70%;">
                                 GDPR: This website is static, and does not collect or process personal information.
                                 Nevertheless, it is hosted on <a href="https://pages.github.com">Github pages</a>.
                                 Github might collect and process further information your browser shares,
@@ -1039,8 +1053,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                                 Please consult their
                                 <a href="https://help.github.com/articles/github-privacy-statement/">privacy statement</a> 
                                 for more information.
-                                </p>
-                            </small></p>
+                            </p>
+                            
 						</div>
                         
 					</section>
