@@ -4,7 +4,7 @@
         "publications": [
             {
                 "title": "Dialogue Term Extraction using Transfer Learning and Topological Data Analysis",
-                "authors": "Renato Vukovic, Michael Heck, Benjamin Matthias Ruppik, Carel van Niekerk, Marcus Zibrowius, Milica Gasic",
+                "authors": "Renato Vukovic, Michael Heck, Benjamin Ruppik, Carel van Niekerk, Marcus Zibrowius, Milica Gasic",
                 "image": "images/projects/cheap_close_neighbors.png",
                 "abstract": "We demonstrate that topological features derived from neighborhoods in a word embedding can be used to extract dialogue terms. In particular, the Wasserstein norm and Persistence Image Vectorization of the persistent homology of the neighborhood appear to be generalizable features which are effective in a transfer learning approach.",
                 "links": [

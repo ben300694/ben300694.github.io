@@ -162,6 +162,18 @@
 		.then(data => {
 			const container = document.querySelector('#publications-container');
 
+			// List of names to bold-face
+			const namesToBold = ["Benjamin Ruppik", "Benjamin Matthias Ruppik"];  // Add more names to this array as needed
+
+			// Function to bold-face specified names
+			function boldFaceNames(authors, names) {
+				names.forEach(name => {
+					const regex = new RegExp(`\\b${name}\\b`, 'g'); // Word boundary to match exact name
+					authors = authors.replace(regex, `<strong>${name}</strong>`);
+				});
+				return authors;
+			}
+
 			data.forEach(section => {
 				// Create a section header
 				const sectionHeader = document.createElement('h4');
@@ -178,9 +190,19 @@
                     <a href="#" class="image"><img src="${publication.image}" alt="Image related to ${publication.title}" /></a>
                     <div class="inner">
                         <h4>${publication.title}</h4>
-                        <p>${publication.abstract}</p>
                     </div>
                 `;
+
+					// Check if 'authors' field exists and append them with bold-faced names
+					if (publication.authors) {
+						let authorsHtml = publication.authors;
+						authorsHtml = boldFaceNames(authorsHtml, namesToBold);
+						article.querySelector('.inner').insertAdjacentHTML('beforeend', `<p style="font-size: 85%;">[${authorsHtml}]</p>`);
+					}
+
+					// Add the abstract
+					const abstractHtml = `<p>${publication.abstract}</p>`;
+					article.querySelector('.inner').insertAdjacentHTML('beforeend', abstractHtml);
 
 					// Check if 'links' field exists and append them
 					if (publication.links && publication.links.length > 0) {
