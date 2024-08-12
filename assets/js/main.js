@@ -175,20 +175,37 @@
 				section.publications.forEach(publication => {
 					const article = document.createElement('article');
 					article.innerHTML = `
-						<a href="#" class="image"><img src="${publication.image}" alt="Image related to ${publication.title}" /></a>
-						<div class="inner">
-							<h4>${publication.title}</h4>
-							<p>${publication.abstract}</p>
-							${publication.links.map(link => `<a href="${link.url}" style="color:purple;">${link.text}</a><br>`).join('')}
-						</div>
-					`;
+                    <a href="#" class="image"><img src="${publication.image}" alt="Image related to ${publication.title}" /></a>
+                    <div class="inner">
+                        <h4>${publication.title}</h4>
+                        <p>${publication.abstract}</p>
+                    </div>
+                `;
+
+					// Check if 'links' field exists and append them
+					if (publication.links && publication.links.length > 0) {
+						const linksHtml = publication.links.map(link => `<a href="${link.url}" style="color:purple;">${link.text}</a><br>`).join('');
+						const linksContainer = document.createElement('p');
+						linksContainer.innerHTML = linksHtml;
+						article.querySelector('.inner').appendChild(linksContainer);
+					}
+
+					// Check for extra links and append them if they exist (without purple style)
+					if (publication.extra_links && publication.extra_links.length > 0) {
+						const extraLinksHtml = publication.extra_links.map(link => `<a href="${link.url}">${link.text}</a><br>`).join('');
+						const extraLinksContainer = document.createElement('p');
+						extraLinksContainer.innerHTML = extraLinksHtml;
+						article.querySelector('.inner').appendChild(extraLinksContainer);
+					}
+
 					publicationsDiv.appendChild(article);
 				});
 
 				// Append the publications div to the container
 				container.appendChild(publicationsDiv);
 			});
-		});
+		})
+		.catch(error => console.error('Error loading publications:', error));
 
 
 })(jQuery);
