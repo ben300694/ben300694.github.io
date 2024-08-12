@@ -6,7 +6,7 @@
                 "title": "Dialogue Term Extraction using Transfer Learning and Topological Data Analysis",
                 "authors": "Renato Vukovic, Michael Heck, Benjamin Ruppik, Carel van Niekerk, Marcus Zibrowius, Milica Gasic",
                 "image": "images/projects/cheap_close_neighbors.png",
-                "abstract": "We demonstrate that topological features derived from neighborhoods in a word embedding can be used to extract dialogue terms. In particular, the Wasserstein norm and Persistence Image Vectorization of the persistent homology of the neighborhood appear to be generalizable features which are effective in a transfer learning approach.",
+                "stub": "We demonstrate that topological features derived from neighborhoods in a static word embedding can be used to extract dialogue terms. In particular, the Wasserstein norm and Persistence Image Vectorization of the persistent homology of the neighborhood appear to be generalizable features which are effective in a transfer learning approach.",
                 "links": [
                     {
                         "text": "Proceedings of the 23rd Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2022), pages 564-581, Edinburgh, UK",
@@ -31,7 +31,7 @@
                 "title": "ChatGPT for Zero-shot Dialogue State Tracking: A Solution or an Opportunity?",
                 "authors": "Michael Heck, Nurul Lubis, Benjamin Ruppik, Renato Vukovic, Shutong Feng, Christian Geishauser, Hsien-Chin Lin, Carel van Niekerk, Milica Gasic",
                 "image": "images/projects/ChatGPT_for_dialogue_state_tracking.png",
-                "abstract": "Recent research on dialogue state tracking (DST) focuses on methods that allow few- and zero-shot transfer to new domains or schemas. However, performance gains heavily depend on aggressive data augmentation and fine-tuning of ever larger language model based architectures. In contrast, general purpose language models, trained on large amounts of diverse data, hold the promise of solving any kind of task without task-specific training. We present preliminary experimental results on the ChatGPT research preview, showing that ChatGPT achieves state-of-the-art performance in zero-shot DST. Despite our findings, we argue that properties inherent to general purpose models limit their ability to replace specialized systems. We further theorize that the in-context learning capabilities of such models will likely become powerful tools to support the development of dedicated and dynamic dialogue state trackers.",
+                "stub": "Recent research on dialogue state tracking (DST) focuses on methods that allow few- and zero-shot transfer to new domains or schemas. However, performance gains heavily depend on aggressive data augmentation and fine-tuning of ever larger language model based architectures. In contrast, general purpose language models, trained on large amounts of diverse data, hold the promise of solving any kind of task without task-specific training. We present preliminary experimental results on the ChatGPT research preview, showing that ChatGPT achieves state-of-the-art performance in zero-shot DST. Despite our findings, we argue that properties inherent to general purpose models limit their ability to replace specialized systems. We further theorize that the in-context learning capabilities of such models will likely become powerful tools to support the development of dedicated and dynamic dialogue state trackers.",
                 "links": [
                     {
                         "text": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), pages 936--950, Toronto, Canada",
@@ -56,7 +56,7 @@
                 "title": "A group-theoretic framework for low-dimensional topology",
                 "authors": "Sarah Blackwell, Rob Kirby, Michael Klug, Vincent Longo, Benjamin Ruppik",
                 "image": "images/projects/knot_group_trisection.png",
-                "abstract": "A correspondence, by way of Heegaard splittings, between closed oriented 3-manifolds and pairs of surjections from a surface group to a free group has been studied by Stallings, Jaco, and Hempel. This correspondence, by way of trisections, was recently extended by Abrams, Gay, and Kirby to the case of smooth, closed, connected, oriented 4-manifolds. We unify these perspectives and generalize this correspondence to the case of links in closed oriented 3-manifolds and links of knotted surfaces in smooth, closed, connected, oriented 4-manifolds. The algebraic manifestations of these four subfields of low-dimensional topology (3-manifolds, 4-manifolds, knot theory, and knotted surface theory) are all strikingly similar, and this correspondence perhaps elucidates some unique character of low-dimensional topology.",
+                "stub": "A correspondence, by way of Heegaard splittings, between closed oriented 3-manifolds and pairs of surjections from a surface group to a free group has been studied by Stallings, Jaco, and Hempel. This correspondence, by way of trisections, was recently extended by Abrams, Gay, and Kirby to the case of smooth, closed, connected, oriented 4-manifolds. We unify these perspectives and generalize this correspondence to the case of links in closed oriented 3-manifolds and links of knotted surfaces in smooth, closed, connected, oriented 4-manifolds. The algebraic manifestations of these four subfields of low-dimensional topology (3-manifolds, 4-manifolds, knot theory, and knotted surface theory) are all strikingly similar, and this correspondence perhaps elucidates some unique character of low-dimensional topology.",
                 "links": [
                     {
                         "text": "To appear in Algebr. Geom. Topol.",
@@ -72,7 +72,7 @@
                 "title": "Homotopy classification of 4-manifolds whose fundamental group is dihedral",
                 "authors": "Daniel Kasprowski, Johnny Nicholson, Benjamin Ruppik",
                 "image": "images/projects/dihedral_resolution.png",
-                "abstract": "We show that the homotopy type of an oriented Poincaré 4-complex is determined by its quadratic 2-type provided its fundamental group is finite and has a dihedral Sylow 2-subgroup.",
+                "stub": "We show that the homotopy type of an oriented Poincaré 4-complex is determined by its quadratic 2-type provided its fundamental group is finite and has a dihedral Sylow 2-subgroup.",
                 "links": [
                     {
                         "text": "Algebr. Geom. Topol. 22(6): 2915-2949 (2022)",
@@ -92,7 +92,7 @@
                 "title": "Deep and Shallow Slice Knots in 4-manifolds",
                 "authors": "Michael Klug, Benjamin Ruppik",
                 "image": "images/projects/deep_slice_schematic.png",
-                "abstract": "We study knots in the boundary of a 4-manifold \\(X\\) which bound a properly embedded disk in \\(X\\), but which are not null-concordant in a collar neighborhood \\(\\partial X \times [0,1]\\) of the boundary.",
+                "stub": "We study knots in the boundary of a 4-manifold \\(X\\) which bound a properly embedded disk in \\(X\\), but which are not null-concordant in a collar neighborhood \\(\\partial X \\times [0,1]\\) of the boundary.",
                 "links": [
                     {
                         "text": "Proc. Amer. Math. Soc. Ser. B 8 (2021), 204-218",
@@ -122,7 +122,7 @@
                 "title": "Casson-Whitney Unknotting Numbers of 2-spheres in the 4-sphere",
                 "authors": "Jason Joseph, Michael Klug, Benjamin Ruppik, Hannah Schwartz",
                 "image": "images/projects/regular_homotopy.png",
-                "abstract": "Inspired by Schneiderman-Teichner's perspective on Gabai's 4-dimensional light bulb theorem we define the Casson-Whitney unknotting number of knotted 2-spheres in \\(S^4\\): Since every 2-knot \\(K\\) in \\(S^4\\) can be obtained by first performing a number of (trivial) finger moves on the unknot, and in a next step removing the resulting intersection points in pairs via Whitney moves (along possibly complicated discs), we can define \\(u_{\textrm{cw}}(K)\\) as the minimal number of finger moves needed in such a process to arrive at \\(K\\). We relate this to the 1-handle stabilization number and look specifically at examples of ribbon 2-knots and twist-spins of classical knotted arcs.",
+                "stub": "Inspired by Schneiderman-Teichner's perspective on Gabai's 4-dimensional light bulb theorem we define the Casson-Whitney unknotting number of knotted 2-spheres in \\(S^4\\): Since every 2-knot \\(K\\) in \\(S^4\\) can be obtained by first performing a number of (trivial) finger moves on the unknot, and in a next step removing the resulting intersection points in pairs via Whitney moves (along possibly complicated discs), we can define \\(u_{\\textrm{cw}}(K)\\) as the minimal number of finger moves needed in such a process to arrive at \\(K\\). We relate this to the 1-handle stabilization number and look specifically at examples of ribbon 2-knots and twist-spins of classical knotted arcs.",
                 "links": [
                     {
                         "text": "J. Topology 14.4 (2021), 1321-1350",
@@ -152,7 +152,7 @@
                 "title": "Homotopy classification of 4-manifolds with finite abelian 2-generator fundamental groups",
                 "authors": "Daniel Kasprowski, Mark Powell, Benjamin Ruppik",
                 "image": "images/projects/product_of_cyclic_resolution.png",
-                "abstract": "We show that for an oriented 4-dimensional Poincaré complex with finite fundamental group, whose 2-Sylow subgroup is abelian with at most 2 generators, the homotopy type is determined by its quadratic 2-type.",
+                "stub": "We show that for an oriented 4-dimensional Poincaré complex with finite fundamental group, whose 2-Sylow subgroup is abelian with at most 2 generators, the homotopy type is determined by its quadratic 2-type.",
                 "links": [
                     {
                         "text": "To appear in Mathematical Proceedings of the Cambridge Philosophical Society.",

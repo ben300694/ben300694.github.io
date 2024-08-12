@@ -200,9 +200,9 @@
 						article.querySelector('.inner').insertAdjacentHTML('beforeend', `<p style="font-size: 85%;">[${authorsHtml}]</p>`);
 					}
 
-					// Add the abstract
-					const abstractHtml = `<p>${publication.abstract}</p>`;
-					article.querySelector('.inner').insertAdjacentHTML('beforeend', abstractHtml);
+					// Add the stub text
+					const stubHtml = `<p>${publication.stub}</p>`;
+					article.querySelector('.inner').insertAdjacentHTML('beforeend', stubHtml);
 
 					// Check if 'links' field exists and append them
 					if (publication.links && publication.links.length > 0) {
@@ -226,6 +226,11 @@
 				// Append the publications div to the container
 				container.appendChild(publicationsDiv);
 			});
+
+			// Trigger MathJax to reprocess the newly added elements
+			if (window.MathJax) {
+				MathJax.typesetPromise();
+			}
 		})
 		.catch(error => console.error('Error loading publications:', error));
 
