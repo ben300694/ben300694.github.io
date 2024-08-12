@@ -1,0 +1,52 @@
+[
+    {
+        "section": "Topological Deep Learning",
+        "publications": [
+            {
+                "title": "Dialogue Term Extraction using Transfer Learning and Topological Data Analysis",
+                "authors": "Renato Vukovic, Michael Heck, Benjamin Matthias Ruppik, Carel van Niekerk, Marcus Zibrowius, Milica Gasic",
+                "image": "images/projects/cheap_close_neighbors.png",
+                "abstract": "We demonstrate that topological features derived from neighborhoods...",
+                "links": [
+                    {
+                        "text": "Proceedings of SIGDIAL 2022",
+                        "url": "https://aclanthology.org/2022.sigdial-1.53/"
+                    },
+                    {
+                        "text": "doi:10.18653/v1/2022.sigdial-1.53",
+                        "url": "https://doi.org/10.18653/v1/2022.sigdial-1.53"
+                    },
+                    {
+                        "text": "arXiv:2208.10448",
+                        "url": "https://arxiv.org/abs/2208.10448"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "Task-oriented Dialogue Systems",
+        "publications": [
+            {
+                "title": "ChatGPT for Zero-shot Dialogue State Tracking: A Solution or an Opportunity?",
+                "authors": "Michael Heck, Nurul Lubis, Benjamin Ruppik, Renato Vukovic, Shutong Feng, Christian Geishauser, Hsien-Chin Lin, Milica Gasic",
+                "image": "images/projects/ChatGPT_for_dialogue_state_tracking.png",
+                "abstract": "Recent research on dialogue state tracking (DST) focuses on methods...",
+                "links": [
+                    {
+                        "text": "Proceedings of ACL 2023",
+                        "url": "https://aclanthology.org/2023.acl-short.81/"
+                    },
+                    {
+                        "text": "doi:10.18653/v1/2023.acl-short.81",
+                        "url": "https://doi.org/10.18653/v1/2023.acl-short.81"
+                    },
+                    {
+                        "text": "arXiv:2306.01386",
+                        "url": "https://arxiv.org/abs/2306.01386"
+                    }
+                ]
+            }
+        ]
+    }
+]
