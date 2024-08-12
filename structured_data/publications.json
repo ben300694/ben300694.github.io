@@ -3,6 +3,24 @@
         "section": "Topological Deep Learning",
         "publications": [
             {
+                "title": "Topological Deep Learning for Term Extraction",
+                "authors": "Benjamin Ruppik",
+                "image": "images/projects/2024_YRRSDS_paper/t-sne_contextual_embedding_space_colored_by_dimension_estimate_cropped.png",
+                "stub": "Position paper outlining my research interests in topological deep learning, with applications to task-oriented dialogue systems.",
+                "links": [
+                    {
+                        "text": "Proceedings of the  20th Workshop on Spoken Dialogue Systems for PhDs, PostDocs & New Researchers (YRRSDS 2024), Kyoto University, Japan (to appear)",
+                        "url": "https://sites.google.com/view/yrrsds2024/program"
+                    }
+                ],
+                "extra_links": [
+                    {
+                        "text": "Position paper (.pdf)",
+                        "url": "pdfs/2024/2024_YRRSDS/2024-08-12_CAMERA_READY_WITH_LINKS_YRRSDS_2024_Topological_Deep_Learning_for_Term_Extraction_Position_paper_of_Benjamin_Matthias_Ruppik.pdf"
+                    }
+                ]
+            },
+            {
                 "title": "Dialogue Term Extraction using Transfer Learning and Topological Data Analysis",
                 "authors": "Renato Vukovic, Michael Heck, Benjamin Ruppik, Carel van Niekerk, Marcus Zibrowius, Milica Gasic",
                 "image": "images/projects/cheap_close_neighbors.png",
