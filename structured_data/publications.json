@@ -5,16 +5,28 @@
             {
                 "title": "Local Topology Measures of Contextual Language Model Latent Spaces With Applications to Dialogue Term Extraction",
                 "authors": "Benjamin Ruppik, Michael Heck, Carel van Niekerk, Renato Vukovic, Hsien-chin Lin, Shutong Feng, Marcus Zibrowius, Milica Gašić",
-                "image": "images/projects/2024_SIGDIAL_paper/contextual_topology_bio_tagger_schematic.png",
+                "image": "images/projects/2024_SIGDIAL_papers/contextual_topology_bio_tagger_schematic.png",
                 "stub": "We show that contextual topological features derived from a given text corpus can be used to enhance the performance of a tagging task on dialogue data.",
                 "links": [
                     {
-                        "text": "Proceedings of the 25th Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2024), Kyoto University, Japan (to appear)",
-                        "url": "https://2024.sigdial.org/list-of-accepted-papers/"
+                        "text": "Nominated for Best Paper Award at SIGDIAL 2024",
+                        "url": "https://2024.sigdial.org/award/"
+                    },
+                    {
+                        "text": "Proceedings of the 25th Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2024), Kyoto University, Japan",
+                        "url": "https://aclanthology.org/2024.sigdial-1.31/"
+                    },
+                    {
+                        "text": "doi:10.18653/v1/2024.sigdial-1.31",
+                        "url": "https://doi.org/10.18653/v1/2024.sigdial-1.31"
                     },
                     {
                         "text": "arXiv:2408.03706",
                         "url": "https://arxiv.org/abs/2408.03706"
+                    },
+                    {
+                        "text": "Public Codebase",
+                        "url": "https://gitlab.cs.uni-duesseldorf.de/general/dsml/tda4contextualembeddings-public"
                     }
                 ]
             },
@@ -62,10 +74,30 @@
         "section": "Task-oriented Dialogue Systems",
         "publications": [
             {
+                "title": "Dialogue Ontology Relation Extraction via Constrained Chain-of-Thought Decoding",
+                "authors": "Renato Vukovic, David Arps, Carel van Niekerk, Benjamin Matthias Ruppik, Hsien-Chin Lin, Michael Heck, Milica Gašić",
+                "image": "images/projects/2024_SIGDIAL_papers/dialogue_ontology_relation_extraction_via_constrained_chain-of-thought_decoding.png",
+                "stub": "We present a novel method that enhances relation extraction in task-oriented dialogue systems by adapting Chain-of-Thought (CoT) decoding to generative models, improving their generalization capabilities. By constraining the decoding process to ontology terms and relations, our approach reduces hallucinations and demonstrates improved performance on two widely used datasets.",
+                "links": [
+                    {
+                        "text": "Proceedings of the 25th Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2024), Kyoto University, Japan",
+                        "url": "https://aclanthology.org/2024.sigdial-1.33/"
+                    },
+                    {
+                        "text": "doi:10.18653/v1/2024.sigdial-1.33",
+                        "url": "https://doi.org/10.18653/v1/2024.sigdial-1.33"
+                    },
+                    {
+                        "text": "arXiv:2408.02361",
+                        "url": "https://arxiv.org/abs/2408.02361"
+                    }
+                ]
+            },
+            {
                 "title": "ChatGPT for Zero-shot Dialogue State Tracking: A Solution or an Opportunity?",
                 "authors": "Michael Heck, Nurul Lubis, Benjamin Ruppik, Renato Vukovic, Shutong Feng, Christian Geishauser, Hsien-Chin Lin, Carel van Niekerk, Milica Gašić",
                 "image": "images/projects/ChatGPT_for_dialogue_state_tracking.png",
-                "stub": "Recent research on dialogue state tracking (DST) focuses on methods that allow few- and zero-shot transfer to new domains or schemas. However, performance gains heavily depend on aggressive data augmentation and fine-tuning of ever larger language model based architectures. In contrast, general purpose language models, trained on large amounts of diverse data, hold the promise of solving any kind of task without task-specific training. We present preliminary experimental results on the ChatGPT research preview, showing that ChatGPT achieves state-of-the-art performance in zero-shot DST. Despite our findings, we argue that properties inherent to general purpose models limit their ability to replace specialized systems. We further theorize that the in-context learning capabilities of such models will likely become powerful tools to support the development of dedicated and dynamic dialogue state trackers.",
+                "stub": "We demonstrate that ChatGPT achieves state-of-the-art zero-shot dialogue state tracking (DST) without task-specific training, outperforming methods that rely on heavy data augmentation and fine-tuning. While general-purpose models like ChatGPT have limitations that prevent them from fully replacing specialized systems, their in-context learning abilities can support the development of dynamic and dedicated DST systems.",
                 "links": [
                     {
                         "text": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), pages 936--950, Toronto, Canada",
