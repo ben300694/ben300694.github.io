@@ -21,6 +21,11 @@
             color: white;
             text-align: center;
             overflow: hidden;
+            transition: background 1s ease-in-out;
+        }
+
+        body.happy {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5, #00d2ff);
         }
 
         @keyframes gradientShift {
@@ -53,6 +58,18 @@
 
             50% {
                 opacity: 0.3;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
             }
         }
 
@@ -146,48 +163,162 @@
         <span id="teqodo">TeQoDO</span> paper
     </div>
 
+    <!-- API endpoint info (hidden by default) -->
+    <div id="api-info"
+        style="position: fixed; bottom: 10px; right: 10px; font-size: 0.8rem; opacity: 0.5; max-width: 250px; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 5px;">
+        <strong>Trigger happy mode:</strong><br>
+        🔗 Add to URL: <code>?mood=HAPPY</code><br>
+        🖥️ Console: <code>changeMood("HAPPY")</code><br>
+        📡 POST: <code>{mood: "HAPPY"}</code>
+    </div>
+
     <script>
+        // State management
+        let currentMood = 'angry';
+        let teqodoInterval;
+        let shakeInterval;
+
+        // Happy compliments for when mood changes
+        const compliments = [
+            "Great job on perfectionizing the TeQoDO paper!",
+            "Renato, you're absolutely brilliant with the TeQoDO research!",
+            "Outstanding work on the TeQoDO manuscript!",
+            "The TeQoDO paper is looking fantastic thanks to you!",
+            "Renato, your TeQoDO improvements are phenomenal!",
+            "Excellent progress on the TeQoDO publication!",
+            "You've made the TeQoDO paper absolutely perfect!",
+            "Bravo, Renato! The TeQoDO work is incredible!"
+        ];
+
         // Function to randomly change the capitalization of 'o' and 'O' in TeQoDO
         function randomizeTeQoDO() {
             const teqodoElement = document.getElementById('teqodo');
             const variations = [
-                'TeQoDO',
-                'TeQodO',
-                'TeQOdO',
-                'TeQOdo',
-                'TeqoDO',
-                'TeqodO',
-                'TeQodo',
-                'Teqodo'
+                'TeQoDO', 'TeQodO', 'TeQOdO', 'TeQOdo',
+                'TeqoDO', 'TeqodO', 'TeQodo', 'Teqodo'
             ];
 
-            // Pick a random variation
             const randomVariation = variations[Math.floor(Math.random() * variations.length)];
             teqodoElement.textContent = randomVariation;
         }
 
-        // Change the TeQoDO text every 2-4 seconds
-        function scheduleNextChange() {
-            const delay = Math.random() * 2000 + 2000; // Random delay between 2-4 seconds
-            setTimeout(() => {
-                randomizeTeQoDO();
-                scheduleNextChange();
-            }, delay);
+        // Schedule TeQoDO text changes
+        function scheduleTeQoDOChanges() {
+            if (teqodoInterval) clearInterval(teqodoInterval);
+            if (currentMood === 'angry') {
+                teqodoInterval = setInterval(() => {
+                    randomizeTeQoDO();
+                }, Math.random() * 2000 + 2000);
+            }
         }
 
-        // Start the randomization
-        scheduleNextChange();
-
-        // Add some extra visual flair - occasionally shake the emoji
+        // Emoji shake animation
         function shakeEmoji() {
             const emoji = document.querySelector('.emoji');
-            emoji.style.animation = 'blink 1.5s ease-in-out infinite, shake 0.5s ease-in-out';
-            setTimeout(() => {
-                emoji.style.animation = 'blink 1.5s ease-in-out infinite';
-            }, 500);
+            if (currentMood === 'angry') {
+                emoji.style.animation = 'blink 1.5s ease-in-out infinite, shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    emoji.style.animation = 'blink 1.5s ease-in-out infinite';
+                }, 500);
+            }
         }
 
-        // Add shake animation
+        // Schedule emoji shaking
+        function scheduleShaking() {
+            if (shakeInterval) clearInterval(shakeInterval);
+            if (currentMood === 'angry') {
+                shakeInterval = setInterval(() => {
+                    shakeEmoji();
+                }, Math.random() * 7000 + 8000);
+            }
+        }
+
+        // Change to happy mode
+        function setHappyMode() {
+            currentMood = 'happy';
+
+            // Clear intervals
+            if (teqodoInterval) clearInterval(teqodoInterval);
+            if (shakeInterval) clearInterval(shakeInterval);
+
+            // Change visual elements
+            const body = document.body;
+            const emoji = document.querySelector('.emoji');
+            const message = document.querySelector('.message');
+
+            body.classList.add('happy');
+            emoji.textContent = '😊';
+            emoji.style.animation = 'bounce 1s ease-in-out infinite';
+
+            // Show random compliment
+            const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+            message.innerHTML = randomCompliment;
+
+            // Auto-revert to angry after 10 seconds
+            setTimeout(() => {
+                setAngryMode();
+            }, 10000);
+        }
+
+        // Change to angry mode
+        function setAngryMode() {
+            currentMood = 'angry';
+
+            const body = document.body;
+            const emoji = document.querySelector('.emoji');
+            const message = document.querySelector('.message');
+
+            body.classList.remove('happy');
+            emoji.textContent = '😡';
+            emoji.style.animation = 'blink 1.5s ease-in-out infinite';
+
+            message.innerHTML = `
+                <span class="highlight">Renato</span>, please perfectionize the 
+                <span id="teqodo">TeQoDO</span> paper
+            `;
+
+            // Restart angry mode behaviors
+            scheduleTeQoDOChanges();
+            scheduleShaking();
+        }
+
+        // Handle POST requests (simulate API endpoint)
+        function handleMoodChange(mood) {
+            if (mood === 'HAPPY') {
+                setHappyMode();
+                return { success: true, message: 'Mood changed to happy!' };
+            }
+            return { success: false, message: 'Invalid mood. Use "HAPPY"' };
+        }
+
+        // Expose a function to window for external calls
+        window.changeMood = function (mood) {
+            return handleMoodChange(mood);
+        };
+
+        // Listen for POST requests (this is a workaround for static sites)
+        // You can call this via: fetch(window.location.href, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({mood: 'HAPPY'})})
+        const originalFetch = window.fetch;
+        window.fetch = function (url, options) {
+            if (options && options.method === 'POST' && url === window.location.href) {
+                try {
+                    const body = JSON.parse(options.body);
+                    const result = handleMoodChange(body.mood);
+                    return Promise.resolve({
+                        ok: result.success,
+                        json: () => Promise.resolve(result)
+                    });
+                } catch (e) {
+                    return Promise.resolve({
+                        ok: false,
+                        json: () => Promise.resolve({ success: false, message: 'Invalid JSON' })
+                    });
+                }
+            }
+            return originalFetch.apply(this, arguments);
+        };
+
+        // Add shake animation CSS
         const style = document.createElement('style');
         style.textContent = `
             @keyframes shake {
@@ -198,16 +329,29 @@
         `;
         document.head.appendChild(style);
 
-        // Randomly shake the emoji every 8-15 seconds
-        function scheduleShake() {
-            const delay = Math.random() * 7000 + 8000; // Random delay between 8-15 seconds
-            setTimeout(() => {
-                shakeEmoji();
-                scheduleShake();
-            }, delay);
+        // Check URL parameters on page load
+        function checkURLParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const mood = urlParams.get('mood');
+
+            if (mood && mood.toUpperCase() === 'HAPPY') {
+                setHappyMode();
+                // Clean up URL after 1 second (optional)
+                setTimeout(() => {
+                    const url = new URL(window.location);
+                    url.searchParams.delete('mood');
+                    window.history.replaceState({}, document.title, url);
+                }, 1000);
+            } else {
+                setAngryMode();
+            }
         }
 
-        scheduleShake();
+        // Initialize based on URL or default to angry mode
+        checkURLParameters();
+
+        // Also expose a simple way to trigger happy mode via console
+        console.log('💡 Tip: Call changeMood("HAPPY") in console, make a POST request, or add ?mood=HAPPY to the URL!');
     </script>
 </body>
 
