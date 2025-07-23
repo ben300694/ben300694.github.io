@@ -237,6 +237,9 @@
         function setHappyMode() {
             currentMood = 'happy';
 
+            // Set flag to remember we were in happy mode
+            sessionStorage.setItem('wasHappyBefore', 'true');
+
             // Clear intervals
             if (teqodoInterval) clearInterval(teqodoInterval);
             if (shakeInterval) clearInterval(shakeInterval);
@@ -272,10 +275,23 @@
             emoji.textContent = '😡';
             emoji.style.animation = 'blink 1.5s ease-in-out infinite';
 
-            message.innerHTML = `
-                <span class="highlight">Renato</span>, please perfectionize the 
-                <span id="teqodo">TeQoDO</span> paper
-            `;
+            // Check if this is a fallback from happy mode or initial load
+            const wasHappy = body.classList.contains('happy') || currentMood === 'happy';
+
+            if (sessionStorage.getItem('wasHappyBefore') === 'true') {
+                // Show "next paper" message if falling back from happy mode
+                message.innerHTML = `
+                    <span class="highlight">Renato</span>, now get to work on the next paper!!!!
+                `;
+                // Clear the flag after showing the message
+                sessionStorage.removeItem('wasHappyBefore');
+            } else {
+                // Show original message for initial load
+                message.innerHTML = `
+                    <span class="highlight">Renato</span>, please perfectionize the 
+                    <span id="teqodo">TeQoDO</span> paper
+                `;
+            }
 
             // Restart angry mode behaviors
             scheduleTeQoDOChanges();
