@@ -3,6 +3,30 @@
         "section": "Topological Deep Learning",
         "publications": [
             {
+                "title": "Less is More: Local Intrinsic Dimensions of Contextual Language Models",
+                "authors": "Benjamin Ruppik, Julius von Rohrscheidt, Carel van Niekerk, Michael Heck, Renato Vukovic, Shutong Feng, Hsien-chin Lin, Nurul Lubis, Bastian Rieck, Marcus Zibrowius, Milica Gašić",
+                "image": "images/projects/2025/Less_is_More_NeurIPS_2025/less_is_more_grokking_screenshot_reduced_quality.jpg",
+                "stub": "We investigate the geometric structure of contextual embedding spaces to better understand how training and fine-tuning shape the behavior of large language models (LLMs). We introduce a framework based on the local intrinsic dimension (LID) of latent representations and analyze how these dimensions evolve across training stages and tasks. Our findings show that shifts in LID reflect key phenomena such as overfitting, grokking, and the saturation of training capacity. Notably, decreases in mean LID coincide with performance improvements, suggesting a practical heuristic for monitoring model development.",
+                "links": [
+                    {
+                        "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA (to appear)",
+                        "url": "https://neurips.cc/virtual/2025/poster/117003"
+                    },
+                    {
+                        "text": "arXiv:2506.01034",
+                        "url": "https://arxiv.org/abs/2506.01034"
+                    },
+                    {
+                        "text": "Main Public Codebase",
+                        "url": "https://github.com/aidos-lab/Topo_LLM_public"
+                    },
+                    {
+                        "text": "Grokking Public Codebase",
+                        "url": "https://github.com/aidos-lab/grokking-via-lid"
+                    }
+                ]
+            },
+            {
                 "title": "Local Topology Measures of Contextual Language Model Latent Spaces With Applications to Dialogue Term Extraction",
                 "authors": "Benjamin Ruppik, Michael Heck, Carel van Niekerk, Renato Vukovic, Hsien-chin Lin, Shutong Feng, Marcus Zibrowius, Milica Gašić",
                 "image": "images/projects/2024_SIGDIAL_papers/contextual_topology_bio_tagger_schematic.png",
@@ -37,8 +61,12 @@
                 "stub": "Position paper outlining my research interests in topological deep learning, with applications to task-oriented dialogue systems.",
                 "links": [
                     {
-                        "text": "Proceedings of the  20th Workshop on Spoken Dialogue Systems for PhDs, PostDocs & New Researchers (YRRSDS 2024), Kyoto University, Japan (to appear)",
-                        "url": "https://sites.google.com/view/yrrsds2024/program"
+                        "text": "Proceedings of the 20th Workshop of Young Researchers' Roundtable on Spoken Dialogue Systems (YRRSDS 2024), Kyoto University, Japan",
+                        "url": "https://aclanthology.org/2024.yrrsds-1.16/"
+                    },
+                    {
+                        "text": "doi:10.18653/v1/2024.yrrsds-1.16",
+                        "url": "https://doi.org/10.18653/v1/2024.yrrsds-1.16"
                     }
                 ],
                 "extra_links": [
