@@ -9,7 +9,7 @@
                 "stub": "We investigate the geometric structure of contextual embedding spaces to better understand how training and fine-tuning shape the behavior of large language models (LLMs). We introduce a framework based on the local intrinsic dimension (LID) of latent representations and analyze how these dimensions evolve across training stages and tasks. Our findings show that shifts in LID reflect key phenomena such as overfitting, grokking, and the saturation of training capacity. Notably, decreases in mean LID coincide with performance improvements, suggesting a practical heuristic for monitoring model development.",
                 "links": [
                     {
-                        "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA (to appear)",
+                        "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA",
                         "url": "https://neurips.cc/virtual/2025/poster/117003"
                     },
                     {
@@ -23,6 +23,16 @@
                     {
                         "text": "Grokking Public Codebase",
                         "url": "https://github.com/aidos-lab/grokking-via-lid"
+                    }
+                ],
+                "extra_links": [
+                    {
+                        "text": "Poster (.pdf)",
+                        "url": "pdfs/2025/2025_NeurIPS_Less_Is_More/neurips_2025_less_is_more_poster_v5.pdf"
+                    },
+                    {
+                        "text": "5-min Presentation Video (YouTube)",
+                        "url": "https://youtu.be/Vkl6dLKnnJc?si=kwWZbs2l9m21DVyU"
                     }
                 ]
             },
