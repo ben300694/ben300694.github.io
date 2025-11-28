@@ -9,7 +9,7 @@
                 "stub": "We investigate the geometric structure of contextual embedding spaces to better understand how training and fine-tuning shape the behavior of large language models (LLMs). We introduce a framework based on the local intrinsic dimension (LID) of latent representations and analyze how these dimensions evolve across training stages and tasks. Our findings show that shifts in LID reflect key phenomena such as overfitting, grokking, and the saturation of training capacity. Notably, decreases in mean LID coincide with performance improvements, suggesting a practical heuristic for monitoring model development.",
                 "links": [
                     {
-                        "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA (to appear)",
+                        "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA",
                         "url": "https://neurips.cc/virtual/2025/poster/117003"
                     },
                     {
@@ -23,6 +23,20 @@
                     {
                         "text": "Grokking Public Codebase",
                         "url": "https://github.com/aidos-lab/grokking-via-lid"
+                    }
+                ],
+                "extra_links": [
+                    {
+                        "text": "Poster (.pdf)",
+                        "url": "pdfs/2025/2025_NeurIPS_Less_Is_More/neurips_2025_less_is_more_poster_v5.pdf"
+                    },
+                    {
+                        "text": "5-min Presentation Video (YouTube)",
+                        "url": "https://youtu.be/Vkl6dLKnnJc"
+                    },
+                    {
+                        "text": "Slides for 45-min Research Talk at KTH: 'Measuring the Topology of Word Embeddings' (.pdf)",
+                        "url": "pdfs/2025/2025-11_Research_talk_at_KTH_Measuring_the_Topology_of_Word_Embeddings/measuring_the_dimension_of_word_embeddings_ruppik_45_min_research_talk_v4.2025-11-24.143500.pdf"
                     }
                 ]
             },
@@ -153,8 +167,12 @@
                 "stub": "A correspondence, by way of Heegaard splittings, between closed oriented 3-manifolds and pairs of surjections from a surface group to a free group has been studied by Stallings, Jaco, and Hempel. This correspondence, by way of trisections, was recently extended by Abrams, Gay, and Kirby to the case of smooth, closed, connected, oriented 4-manifolds. We unify these perspectives and generalize this correspondence to the case of links in closed oriented 3-manifolds and links of knotted surfaces in smooth, closed, connected, oriented 4-manifolds. The algebraic manifestations of these four subfields of low-dimensional topology (3-manifolds, 4-manifolds, knot theory, and knotted surface theory) are all strikingly similar, and this correspondence perhaps elucidates some unique character of low-dimensional topology.",
                 "links": [
                     {
-                        "text": "To appear in Algebr. Geom. Topol.",
-                        "url": "https://msp.org/soon/coming.php?jpath=agt"
+                        "text": "Algebr. Geom. Topol. 25 (2025) 4667-4718",
+                        "url": "https://msp.org/agt/2025/25-8/p07.xhtml"
+                    },
+                    {
+                        "text": "doi:10.2140/agt.2025.25.4667",
+                        "url": "https://doi.org/10.2140/agt.2025.25.4667"
                     },
                     {
                         "text": "arXiv:2301.05685",
@@ -249,8 +267,12 @@
                 "stub": "We show that for an oriented 4-dimensional Poincaré complex with finite fundamental group, whose 2-Sylow subgroup is abelian with at most 2 generators, the homotopy type is determined by its quadratic 2-type.",
                 "links": [
                     {
-                        "text": "To appear in Mathematical Proceedings of the Cambridge Philosophical Society.",
-                        "url": "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/information/about-this-journal"
+                        "text": "Mathematical Proceedings of the Cambridge Philosophical Society. 2024; 177(2): 263-283",
+                        "url": "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/homotopy-classification-of-4manifolds-with-finite-abelian-2generator-fundamental-groups/57DC64FAE5CC5C5C432AEAFD9F851844"
+                    },
+                    {
+                        "text": "doi:10.1017/S0305004124000227",
+                        "url": "https://doi.org/10.1017/S0305004124000227"
                     },
                     {
                         "text": "arXiv:2005.00274",
