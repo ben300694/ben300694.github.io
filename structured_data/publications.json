@@ -5,8 +5,8 @@
             {
                 "title": "Less is More: Local Intrinsic Dimensions of Contextual Language Models",
                 "authors": "Benjamin Ruppik, Julius von Rohrscheidt, Carel van Niekerk, Michael Heck, Renato Vukovic, Shutong Feng, Hsien-chin Lin, Nurul Lubis, Bastian Rieck, Marcus Zibrowius, Milica Gašić",
-                "image": "images/projects/2025/Less_is_More_NeurIPS_2025/less_is_more_grokking_screenshot_reduced_quality.jpg",
-                "stub": "We investigate the geometric structure of contextual embedding spaces to better understand how training and fine-tuning shape the behavior of large language models (LLMs). We introduce a framework based on the local intrinsic dimension (LID) of latent representations and analyze how these dimensions evolve across training stages and tasks. Our findings show that shifts in LID reflect key phenomena such as overfitting, grokking, and the saturation of training capacity. Notably, decreases in mean LID coincide with performance improvements, suggesting a practical heuristic for monitoring model development.",
+                "image": "images/projects/2025/Less_is_More_NeurIPS_2025/grokking_validation_training_dimension_screenshot.png",
+                "stub": "We investigate the geometric structure of contextual embedding spaces to better understand how training and fine-tuning shape the behavior of large language models (LLMs). We introduce an unsupervised framework based on the local intrinsic dimension (LID) of latent representations and analyze how these dimensions evolve across training stages and tasks. Our findings show that shifts in LID reflect key phenomena such as overfitting, grokking, and the saturation of training capacity. Notably, decreases in mean LID coincide with performance improvements, suggesting a practical heuristic for monitoring model development.",
                 "links": [
                     {
                         "text": "Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA",
@@ -71,7 +71,7 @@
             {
                 "title": "Topological Deep Learning for Term Extraction",
                 "authors": "Benjamin Ruppik",
-                "image": "images/projects/2024_YRRSDS_paper/t-sne_contextual_embedding_space_colored_by_dimension_estimate_cropped.png",
+                "image": "images/projects/2024_YRRSDS_paper/extracted_points_colored_by_local_estimate_selected_points_larger_legend.png",
                 "stub": "Position paper outlining my research interests in topological deep learning, with applications to task-oriented dialogue systems.",
                 "links": [
                     {
